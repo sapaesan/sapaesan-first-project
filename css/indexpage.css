@@ -1,0 +1,118 @@
+#headerbar_lower > h1 {
+  font-size: 96px;
+  font-weight: bold;
+  color: #ff5331;
+  margin: 0px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%);
+  width: 868px;
+}
+
+.array_text {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #3a001e;
+}
+
+.counta {
+  color: #ff5331;
+  font-size: 25px;
+}
+/*네비바_무한*/
+.index_button {
+  display: flex;
+  margin-top: 110px;
+  flex-direction: row;
+}
+
+#navbox {
+  width: 100%;
+}
+
+.navbar {
+  width: 868px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar_addiv {
+  width: 100%;
+  height: 100px;
+}
+
+/*네비바 컨텐츠 버튼 시작*/
+.enter_content {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #3a001e;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  position: relative;
+}
+
+.content_name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.top_name,
+.bottom_name {
+  color: #3a001e;
+}
+
+.middle_name {
+  color: #ff5331;
+}
+/*네비바 컨텐츠 버튼 끝*/
+
+/*네비바 컨텐츠 호버애니메이션 시작*/
+
+.enter_content::before {
+  background: #ff5331;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.enter_content:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.enter_content:hover h3 {
+  color: #ede9d0;
+  transition: transform 2s ease-in-out;
+}
+
+/*네비바 컨텐츠 호버 애니메이션 끝*/
+
+/* 홈페이지 설명 시작*/
+#last_section {
+  padding-bottom: 306px;
+  text-align: center;
+  background-color: #ede9d0;
+  padding-top: 10px;
+}
+
+#last_section h2 {
+  color: #ff5331;
+}
+
+/* 홈페이지 설명 끝*/
