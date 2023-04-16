@@ -1,64 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>물타기 계산기</title>
-  </head>
-  <body>
-    <h1>물타기 계산기</h1>
-    <form>
-      <table>
-        <tr>
-          <th>매수가</th>
-          <th>매수량</th>
-        </tr>
-        <!-- 매수가 입력 칸 10개 -->
-        <tr>
-          <td><input type="number" id="buyPrice1" /></td>
-          <td><input type="number" id="buyQuantity1" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice2" /></td>
-          <td><input type="number" id="buyQuantity2" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice3" /></td>
-          <td><input type="number" id="buyQuantity3" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice4" /></td>
-          <td><input type="number" id="buyQuantity4" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice5" /></td>
-          <td><input type="number" id="buyQuantity5" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice6" /></td>
-          <td><input type="number" id="buyQuantity6" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice7" /></td>
-          <td><input type="number" id="buyQuantity7" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice8" /></td>
-          <td><input type="number" id="buyQuantity8" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice9" /></td>
-          <td><input type="number" id="buyQuantity9" /></td>
-        </tr>
-        <tr>
-          <td><input type="number" id="buyPrice10" /></td>
-          <td><input type="number" id="buyQuantity10" /></td>
-        </tr>
-      </table>
-      <button type="button" onclick="calculate()">계산하기</button>
-    </form>
-    <p>평단가: <span id="avgPrice"></span></p>
-    <p>총 매수량: <span id="totalQuantity"></span></p>
-    <p>평가금액: <span id="totalPrice"></span></p>
-    <script src="calculator.js"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <title>물타기 계산기</title>
+</head>
+<body>
+  <h1>물타기 계산기</h1>
+  <form>
+    <table>
+      <tr>
+        <th>매수가</th>
+        <th>매수량</th>
+      </tr>
+      <!-- 매수가 입력 칸 10개 -->
+      <tr>
+        <td><input type="number" id="buyPrice1" /></td>
+        <td><input type="number" id="buyQuantity1" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice2" /></td>
+        <td><input type="number" id="buyQuantity2" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice3" /></td>
+        <td><input type="number" id="buyQuantity3" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice4" /></td>
+        <td><input type="number" id="buyQuantity4" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice5" /></td>
+        <td><input type="number" id="buyQuantity5" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice6" /></td>
+        <td><input type="number" id="buyQuantity6" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice7" /></td>
+        <td><input type="number" id="buyQuantity7" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice8" /></td>
+        <td><input type="number" id="buyQuantity8" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice9" /></td>
+        <td><input type="number" id="buyQuantity9" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="buyPrice10" /></td>
+        <td><input type="number" id="buyQuantity10" /></td>
+      </tr>
+    </table>
+    <button type="button" onclick="calculate()">계산하기</button>
+  </form>
+  <p>평단가: <span id="avgPrice"></span></p>
+  <p>총 매수량: <span id="totalQuantity"></span></p>
+  <p>평가금액: <span id="totalPrice"></span></p>
+  <script src="calculator.js"></script>
+</body>

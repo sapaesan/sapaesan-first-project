@@ -1,9 +1,22 @@
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+function calculate() {
+  let totalQuantity = 0;
+  let totalPrice = 0;
+  let avgPrice = 0;
+  for (let i = 1; i <= 10; i++) {
+    const buyPrice = parseFloat;
+  }
+}
+
+// 천 단위마다 쉼표(,)를 정하는 코드
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 function calculate() {
-  // 매수가와 매수량을 배열에 저장
+  // 매수가와 매수량을 배열에 저장했고 10칸 다 지정해줬음.
   const buyPrices = [
     document.getElementById("buyPrice1").value,
     document.getElementById("buyPrice2").value,
@@ -30,7 +43,7 @@ function calculate() {
     document.getElementById("buyQuantity10").value,
   ];
 
-  // 매수 가격 총합과 매수량 총합 구하기
+  // 매수 가격 총합과 매수량 총합 구하기 코드임.
   let totalQuantity = 0;
   let totalPrice = 0;
   for (let i = 0; i < 10; i++) {
@@ -40,10 +53,10 @@ function calculate() {
     }
   }
 
-  // 평단가 계산
+  // 평단가 계산이요.
   const avgPrice = totalPrice / totalQuantity;
 
-  // 결과 출력
+  // 결과 출력이요.
   document.getElementById("avgPrice").innerText = numberWithCommas(
     avgPrice.toFixed(2)
   );
